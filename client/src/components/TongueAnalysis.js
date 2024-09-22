@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios'; // Import axios for making HTTP requests
-
+import ReactMarkdown from 'react-markdown';
 // Main Component
 function TongueAnalysis() {
   const [image, setImage] = useState(null); // State to store the selected image
@@ -73,7 +73,7 @@ function TongueAnalysis() {
         analysisResults && (
           <div>
             <h2>Tongue Analysis Results:</h2>
-            <p>{analysisResults}</p>
+            <ReactMarkdown>{analysisResults}</ReactMarkdown>
 
           </div>
         )
