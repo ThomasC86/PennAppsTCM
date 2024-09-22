@@ -73,7 +73,10 @@ function TongueAnalysis() {
         analysisResults && (
           <div>
             <h2>Tongue Analysis Results:</h2>
+            <h3>Your Tongue Type:</h3>
+            <div style={{whiteSpace: 'pre-wrap', textAlign: 'left'}}>
             <ReactMarkdown>{analysisResults}</ReactMarkdown>
+            </div>
 
           </div>
         )
